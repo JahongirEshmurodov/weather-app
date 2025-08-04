@@ -1,0 +1,186 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        color: #4793FF;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        column-gap: 10px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        &-inp {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: Montserrat;
+            padding: 9px 20px;
+            border: none;
+            border-radius: 10px;
+            background: var(--day);
+        }
+    }
+}
+
+.content {
+    display: flex;
+    column-gap: 50px;
+    &__left {
+        background: var(--content);
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px #B4B4B440;
+        padding: 20px;
+        position: relative;
+        width: 400px;
+        &-img {
+            position: absolute;
+            top: 46px;
+            right: 20px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        &-title {
+            color: #4793FF;
+            font-size: 96px;
+            font-weight: 500;
+            line-height: 117px;
+        }
+        &-today{
+           color:  var(--text);
+           font-weight: 400;
+           font-size: 40px;
+           line-height: 48px;
+           margin-bottom: 31px;
+        }
+        &-time{
+            color: #939CB0;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 14px;
+        }
+        &-city{
+            color: #939CB0;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+    &__right{
+        background: var(--content);
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px #B4B4B440;
+        padding: 42px 32px;
+        position: relative;
+        flex-grow: 1;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 24px;
+        &-img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        }
+        &-icon{
+            width: 38px;
+            height: 38px;
+            background: #FFF;
+            box-shadow: 1px 4px 10px -1px #4793FF33;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title{
+            color: #939CB0;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &-descr{
+            color: var(--text);
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+}
+.preloader {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+  transform: translate(-50%, -50%);
+}
+.week{
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    margin-top: 50px;
+    padding: 20px 18px;
+    background: var(--content);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.day{
+    background: var(--day);
+    padding: 11px;
+    border-radius: 10px;
+    width: 150px;
+    &__name{
+        color: var(--text);
+        margin-bottom: 7px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__number{
+        color: rgba(147, 156, 176, 1);
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 12px;
+    }
+    &__img{
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+    }
+    &__temp-day{
+        color: var(--text);
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+    &__temp-night{
+        color: rgba(147, 156, 176, 1);
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 6px;
+    }
+    &__descr{
+        color: rgba(147, 156, 176, 1);
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
